@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
-  　<head>
-      <meta charset="utf-8" />
+    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      <title>Agency - Start Bootstrap Theme</title>
+      <meta charset="utf-8" />
+      <title>MoneyCommunity</title>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
+
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
       <!-- Font Awesome icons (free version)-->
       <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -14,21 +20,10 @@
       <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
       <!-- Core theme CSS (includes Bootstrap)-->
-      <link href="css/styles.css" rel="stylesheet" />
+      <link href="css/index.css" rel="stylesheet" />
     </head>
 
   <body>
     <%= yield %>
   </body>
 </html>
-
-
-
-  <%# <head> 
-    <title>MoneyCommunity</title>
-    <%= csrf_meta_tags %>
-    <%# <%= csp_meta_tag %>
-
-    <%# <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
-  <%# </head> %> 
